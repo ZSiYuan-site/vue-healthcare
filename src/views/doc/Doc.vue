@@ -34,37 +34,39 @@
         >
           {{ item }}
         </div>
-      </div>
-
-      <!-- 右侧滑动区域 -->
-      <div class="doc-slider">
-        <ul>
-          <li v-for="(item, index) in rightList" :key="index">
-            <a href="javascript:;"> {{ item }} </a>
-          </li>
-        </ul>
+        <json-viewer :value="content" copyable></json-viewer>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import JsonViewer from 'vue-json-viewer'
 export default {
   name: 'VueHealthcareDoc',
-
+  // 注册组件
+  components: {
+    JsonViewer
+  },
   data () {
     return {
-      // 右侧的目录列表
-      rightList: ['1', '2', '3', '4', '5'],
+      // 舌诊数据
+      content: {},
       // 中间的主体内容
       centerContent: ['1区域', '2区域', '3区域', '4区域', '5区域'],
       listBoxState: true // 点击导航栏时，暂时停止监听页面滚动
     }
   },
+  mounted () {
+    // 获取舌诊数据
+    this.getTogueDate()
+  },
 
-  mounted () {},
-
-  methods: {}
+  methods: {
+    // 获取舌诊数据
+    getTogueDate () {
+    }
+  }
 }
 </script>
 
