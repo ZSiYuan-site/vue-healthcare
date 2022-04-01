@@ -27,34 +27,20 @@
       <!-- 中间主体内容 -->
       <div class="doc-main">
         <h1>新手指南1</h1>
-        <div class="doc-main-content">成为开发者1</div>
-        <div class="doc-main-content">成为开发者2</div>
-        <div class="doc-main-content">成为开发者3</div>
-        <div class="doc-main-content">成为开发者4</div>
-        <div class="doc-main-content">成为开发者5</div>
+        <div
+          class="doc-main-content"
+          v-for="(item, index) in centerContent"
+          :key="index"
+        >
+          {{ item }}
+        </div>
       </div>
 
       <!-- 右侧滑动区域 -->
       <div class="doc-slider">
         <ul>
-          <li>
-            <a href="javascript:;"> AAAA </a>
-          </li>
-          <li>
-            <a href="javascript:;">BBBdwB</a>
-          </li>
-          <li>
-            <a href="javascript:;"> BBBdwdB </a>
-          </li>
-          <li>
-            <a href="javascript:;"> BdwdwBBB </a>
-          </li>
-          <li>
-            <a href="javascript:;"> BdwdwBBB </a>
-          </li>
-
-          <li>
-            <a href="javascript:;"> BdwdwBBB </a>
+          <li v-for="(item, index) in rightList" :key="index">
+            <a href="javascript:;"> {{ item }} </a>
           </li>
         </ul>
       </div>
@@ -67,7 +53,13 @@ export default {
   name: 'VueHealthcareDoc',
 
   data () {
-    return {}
+    return {
+      // 右侧的目录列表
+      rightList: ['1', '2', '3', '4', '5'],
+      // 中间的主体内容
+      centerContent: ['1区域', '2区域', '3区域', '4区域', '5区域'],
+      listBoxState: true // 点击导航栏时，暂时停止监听页面滚动
+    }
   },
 
   mounted () {},

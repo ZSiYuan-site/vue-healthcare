@@ -6,14 +6,14 @@
         margin: 0 auto;
         width: 1180px;
         background-color: #ffffff;
-        height: 1000px;
+        // height: 1000px;
         display: flex;
 
         //   左侧侧边栏 
         .doc-menu {
             width: 240px;
             border-right: 1px solid #eaeff3;
-            padding: 20px;  
+            padding: 20px;
 
             //   搜索区域 
             .menu-search {
@@ -60,8 +60,30 @@
             width: 160px;
             border-left: 1px solid;
             height: 130px;
-            background-color: red;
+            // background-color: red;
             margin-top: 20px;
+            margin-left: 20px;
+
+            ul {
+                width: 100%;
+                // height: 130px;
+                border-left: 1px solid #f5f5f5;
+
+                li {
+                    width: 100%;
+                    height: 30px;
+                    padding: 2px 3px;
+                    border-left: 1px solid #108cee;
+                    background-color: #108cee;
+                    margin-top: 10px;
+                    text-align: center;
+                    line-height: 30px;
+
+                    a {
+                        color: #0b0b0b;
+                    }
+                }
+            }
         }
     }
 }
