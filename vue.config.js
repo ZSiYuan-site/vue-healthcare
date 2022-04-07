@@ -3,5 +3,19 @@ const {
 } = require('@vue/cli-service')
 module.exports = defineConfig({
   lintOnSave: false,
-  transpileDependencies: true
+  transpileDependencies: true,
+
+  // 代理跨域
+  devServer: {
+    proxy: {
+      '/api': {
+        target: 'http://localhost:3000',
+        ws: true,
+        changeOrigin: true,
+        pathRewrite: {
+          '^/api': ''
+        }
+      }
+    }
+  }
 })

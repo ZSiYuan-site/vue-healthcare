@@ -24,7 +24,8 @@ const routes = [{
     component: Home
   }, {
     path: '/home',
-    component: Home
+    component: Home,
+    name: 'home'
   },
   {
     path: '/apply/:id',

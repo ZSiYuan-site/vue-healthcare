@@ -13,4 +13,7 @@ export default {
 
 <style lang="scss">
 @import "./assets/scss/reset.scss";
+#app{
+  height: 100%;
+}
 </style>

@@ -1,0 +1,140 @@
+.login {
+    background: url('./image/login-bg.png') no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+
+    // 头部
+    header {
+        height: 60px;
+        width: 100%;
+        background-color: rgba(0, 0, 0, .3);
+        line-height: 60px;
+        position: fixed;
+        z-index: 999;
+
+        .container {
+            width: 1180px;
+            margin: 0 auto;
+            font-size: 19px;
+            font-weight: 500;
+            cursor: pointer;
+
+            .logo-box {
+                a{
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    // 登录区域
+    .container {
+        position: relative;
+        width: 1180px;
+        margin: 0 auto;
+        height: 100%;
+
+        .login-panel {
+            width: 420px;
+            height: 420px;
+            background-color: #ffffff;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+            padding: 0 55px 30px;
+            border-radius: 10px;
+
+            .login-nav {
+                font-size: 20px;
+                line-height: 60px;
+                margin-top: 10px;
+                border-bottom: #e1e1e1 2px solid;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+
+                // 激活类
+                .current {
+                    color: #1e90ff;
+                    border-bottom: #1e90ff 2px solid;
+                    margin-bottom: -2px;
+                }
+
+                span {
+                    width: 155px;
+                    cursor: pointer;
+                }
+
+            }
+
+            .login-form {
+                margin-top: 30px;
+
+                .login-tab {
+                    .forger-password {
+                        display: inline-block;
+                        float: right;
+                    }
+
+                    .register-now {
+                        float: right;
+                    }
+
+                    .el-button {
+                        width: 155px;
+                        height: 40px;
+                        font-size: 18px;
+                    }
+                }
+
+
+                // 获取验证码输入框
+                .identifying-code {
+                    width: 142px;
+                    margin-right: 12px;
+                }
+
+                // 获取验证码按钮
+                .get-code-btn {
+                    font-size: 13px !important;
+                    color: #1e90ff;
+                    background: #fff;
+                    border: #1e90ff 1px solid;
+                }
+
+            }
+
+            .other-login {
+                line-height: 22px;
+
+                span {
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: #999;
+                }
+
+                .wechat-login {
+                    display: inline-block;
+                    background: url('./image/logo_wx.gif') no-repeat;
+                    width: 22px;
+                    height: 22px;
+                    float: right;
+                    margin-right: 4px;
+                }
+
+                .wobo-login {
+                    display: inline-block;
+                    background: url('./image/logo_wb.gif') no-repeat;
+                    width: 22px;
+                    height: 22px;
+                    float: right;
+                }
+            }
+        }
+    }
+
+}

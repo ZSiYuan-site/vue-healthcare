@@ -1,0 +1,62 @@
+.footer {
+    background: #002e5d;
+    padding-bottom: 30px;
+
+    .container {
+        width: 1180px;
+        margin: 0 auto;
+        padding-top: 20px;
+
+        // logo
+        .footer-logo {
+            color: #fff;
+        }
+
+        // 主体
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+
+            .footer-item-title {
+                padding: 0 15px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                color: #fff;
+                font-size: 16px;
+                border-left: 2px solid #fff;
+
+            }
+
+            .footer-item-list {
+                display: inline-block;
+                font-size: 16px;
+                display: flex;
+                flex-direction: column;
+
+                li {
+                    a {
+                        display: inline-block;
+                        padding: 6px 15px;
+                        color: #C8D4E4;
+                    }
+                }
+            }
+        }
+
+        // 最底部的版权
+        .tips {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 12px;
+            padding-bottom: 18px;
+            color: #8795a7;
+            margin-left: -27px;
+        }
+
+        .bottom {
+            font-size: 12px;
+            text-align: center;
+            color: #8795a7;
+        }
+    }
+}

@@ -11,7 +11,6 @@
           <div class="top-nav-item">
             <span class="top-nav-item-text">开放能力</span>
 
-            <!-- 这里先不要了，自己写个简易版本的先 -->
             <div class="children">
               <div class="menu-item">
                 <div class="menu-item-title">人脸与人体识别</div>
@@ -67,8 +66,6 @@
                 </ul>
               </div>
             </div>
-
-            <!-- <div class="children">我是children哦哦哦</div> -->
           </div>
 
           <div class="top-nav-item">
@@ -85,6 +82,12 @@
 
           <div class="top-nav-item">
             <span class="top-nav-item-text">开放能力</span>
+          </div>
+
+          <div class="top-nav-item register-login">
+            <router-link to="/login">
+              <span class="top-nav-item-text"> 注册 / 登录</span>
+            </router-link>
           </div>
         </div>
       </div>

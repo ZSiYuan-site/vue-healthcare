@@ -5,7 +5,21 @@
 import myAxios from './myAxios'
 
 // 测试
-export const test = myAxios({
+export const test = () => myAxios({
   url: '/mock/togue',
   method: 'get'
+})
+
+// 获取信息
+export const getApplyInfo = (applyName) => myAxios({
+  url: '/getApply',
+  method: 'post',
+  data: applyName
+})
+
+// 新增信息
+export const addApplyInfo = (ApplyInfo) => myAxios({
+  url: '/addApply',
+  method: 'post',
+  data: ApplyInfo
 })
