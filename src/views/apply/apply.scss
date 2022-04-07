@@ -1,5 +1,4 @@
 .apply {
-    height: 1000px;
     width: 100%;
 
     // banner区域
@@ -9,23 +8,14 @@
         background: url('./image/apply_bg.jpg') no-repeat;
         background-size: 100% 100%;
 
-        .container {
-            width: 1180px;
-            margin: 0 auto;
 
-            .demo {
-                line-height: 450px;
-                text-align: center;
+        .demo {
+            line-height: 450px;
+            text-align: center;
 
-                a {
-                    color: #fff;
-                }
+            a {
+                color: #fff;
             }
         }
-
     }
-
-
-
-
 }

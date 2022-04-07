@@ -20,7 +20,7 @@
 
     <!-- 开放能力 -->
     <div class="ability">
-      <div class="container">
+      <div class="base-container">
         <p class="ability-title">开放能力</p>
         <div class="underline">
           <span class="line"></span>
@@ -278,7 +278,7 @@
 
     <!-- 平台优势 -->
     <div class="advantage">
-      <div class="container">
+      <div class="base-container">
         <p class="advantage-title">平台优势</p>
         <div class="underline">
           <span class="line"></span>
@@ -340,7 +340,7 @@
 
     <!-- 合作伙伴 -->
     <div class="cooperate">
-      <div class="container">
+      <div class="base-container">
         <p class="cooperate-title">合作伙伴</p>
         <div class="underline">
           <span class="line"></span>
@@ -435,7 +435,7 @@
 
     <!-- 新闻资讯 -->
     <div class="news">
-      <div class="container">
+      <div class="base-container">
         <p class="news-title">新闻资讯</p>
         <div class="underline">
           <span class="line"></span>
@@ -500,7 +500,7 @@
 
     <!-- 数据展示部分 -->
     <div class="data">
-      <div class="container">
+      <div class="base-container">
         <div class="data-text">
           <p>全线能力持续上新，期待您的加入</p>
         </div>
@@ -588,4 +588,5 @@ export default {
 
 <style lang="scss" scoped>
 @import "./home.scss";
+@import "../../assets/scss/base.scss";
 </style>

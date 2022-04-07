@@ -45,11 +45,6 @@
     .ability {
         margin-top: 40px;
 
-        .container {
-            width: 1180px;
-            margin: 0 auto;
-        }
-
         .ability-title {
             text-align: center;
             font-size: 26px;
@@ -171,51 +166,45 @@
         height: 500px;
         padding-top: 40px;
 
-        .container {
-            width: 1180px;
-            margin: 0 auto;
+        .advantage-title {
+            text-align: center;
+            font-size: 26px;
+            font-family: Source Han Sans CN;
+            font-weight: 400;
+        }
 
-            .advantage-title {
-                text-align: center;
-                font-size: 26px;
-                font-family: Source Han Sans CN;
-                font-weight: 400;
-            }
+        .advantage-content {
+            display: flex;
+            justify-content: space-around;
 
-            .advantage-content {
-                display: flex;
-                justify-content: space-around;
+            .advantage-content-item {
+                width: 216px;
 
-                .advantage-content-item {
-                    width: 216px;
+                i {
+                    display: block;
+                    margin: 0 auto;
+                    height: 150px;
+                    width: 150px;
+                    overflow: hidden;
 
-                    i {
-                        display: block;
-                        margin: 0 auto;
-                        height: 150px;
-                        width: 150px;
-                        overflow: hidden;
-
-                        img {
-                            height: 100%;
-                        }
+                    img {
+                        height: 100%;
                     }
+                }
 
-                    h3 {
-                        text-align: center;
-                        margin-top: 10px;
-                        margin-bottom: 18px;
-                    }
+                h3 {
+                    text-align: center;
+                    margin-top: 10px;
+                    margin-bottom: 18px;
+                }
 
-                    .health-content {
-                        text-align: center;
-                        color: #333;
-                        font-weight: 400;
-                    }
+                .health-content {
+                    text-align: center;
+                    color: #333;
+                    font-weight: 400;
                 }
             }
         }
-
     }
 
     // 合作伙伴
@@ -223,80 +212,76 @@
         padding-top: 40px;
         padding-bottom: 40px;
 
-        .container {
-            width: 1180px;
-            margin: 0 auto;
 
-            .cooperate-title {
-                text-align: center;
-                font-size: 26px;
-                font-family: Source Han Sans CN;
-                font-weight: 400;
-            }
+        .cooperate-title {
+            text-align: center;
+            font-size: 26px;
+            font-family: Source Han Sans CN;
+            font-weight: 400;
+        }
 
-            .cooperate-content {
-                .cooperate-item {
-                    display: flex;
-                    margin: 30px;
+        .cooperate-content {
+            .cooperate-item {
+                display: flex;
+                margin: 30px;
 
-                    .cooperate-item-img {}
+                .cooperate-item-img {}
 
-                    .cooperate-item-right-box {
-                        padding: 15px 20px 15px 30px;
-                        text-align: right;
-                        height: 260px;
+                .cooperate-item-right-box {
+                    padding: 15px 20px 15px 30px;
+                    text-align: right;
+                    height: 260px;
 
-                        .cooperate-item-right-box-title {
-                            text-align: left;
-                            font-size: 20px;
-                            font-weight: 500;
-                            font-family: Source Han Sans CN;
-                            color: #333;
-                        }
-
-                        .cooperate-item-right-box-context {
-                            padding-top: 10px;
-                            padding-right: 20px;
-                            text-align: left;
-                            font-size: 14px;
-                            line-height: 20px;
-                        }
-
-
-                        .cooperate-item-right-box-partner {
-                            text-align: left;
-                            font-size: 20px;
-                            font-weight: 500;
-                            font-family: Source Han Sans CN;
-                            color: #333;
-                            padding-top: 25px;
-                        }
-
-                        .partner-box {
-                            padding-top: 15px;
-
-                            .every-partner {
-                                width: 115px;
-                                height: 50px;
-                                float: left;
-                                padding: 10px 0;
-                                width: 115px;
-                                text-align: center;
-                                margin-right: 20px;
-                                height: 50px;
-                                background: #fff;
-                                box-shadow: 0 2px 4px 0 rgb(0 0 0 / 18%);
-
-                                img {
-                                    width: 70%;
-                                    height: 100%;
-                                }
-                            }
-
-                        }
+                    .cooperate-item-right-box-title {
+                        text-align: left;
+                        font-size: 20px;
+                        font-weight: 500;
+                        font-family: Source Han Sans CN;
+                        color: #333;
                     }
 
+                    .cooperate-item-right-box-context {
+                        padding-top: 10px;
+                        padding-right: 20px;
+                        text-align: left;
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
+
+
+                    .cooperate-item-right-box-partner {
+                        text-align: left;
+                        font-size: 20px;
+                        font-weight: 500;
+                        font-family: Source Han Sans CN;
+                        color: #333;
+                        padding-top: 25px;
+                    }
+
+                    .partner-box {
+                        padding-top: 15px;
+
+                        .every-partner {
+                            width: 115px;
+                            height: 50px;
+                            float: left;
+                            padding: 10px 0;
+                            width: 115px;
+                            text-align: center;
+                            margin-right: 20px;
+                            height: 50px;
+                            background: #fff;
+                            box-shadow: 0 2px 4px 0 rgb(0 0 0 / 18%);
+
+                            img {
+                                width: 70%;
+                                height: 100%;
+                            }
+                        }
+
+                    }
                 }
+
             }
         }
     }
@@ -308,75 +293,67 @@
         background-color: #f7f7f7;
         padding-top: 40px;
 
-        .container {
-            width: 1180px;
-            margin: 0 auto;
+        .news-title {
+            text-align: center;
+            font-size: 26px;
+            font-family: Source Han Sans CN;
+            font-weight: 400;
+        }
 
-            .news-title {
-                text-align: center;
-                font-size: 26px;
-                font-family: Source Han Sans CN;
-                font-weight: 400;
-            }
+        .news-title-pane {
+            display: flex;
+            margin-top: 30px;
+            justify-content: space-around;
 
-            .news-title-pane {
-                display: flex;
-                margin-top: 30px;
-                justify-content: space-around;
+            .news-title-pane-item {
+                width: 380px;
+                background-color: #fff;
 
-                .news-title-pane-item {
-                    width: 380px;
-                    background-color: #fff;
+                a {
+                    .news-title-pane-item-img {
+                        width: 100%;
+                        overflow: hidden;
+                        height: 180px;
+                        margin-bottom: 20px;
+                        background-size: cover;
 
-                    a {
-                        .news-title-pane-item-img {
-                            width: 100%;
-                            overflow: hidden;
+                        img {
                             height: 180px;
-                            margin-bottom: 20px;
-                            background-size: cover;
+                            width: auto;
+                        }
+                    }
 
-                            img {
-                                height: 180px;
-                                width: auto;
-                            }
+                    .news-title-pane-item-box {
+                        padding: 0 36px;
+                        height: 232px;
+
+                        .health-conTit {
+                            text-align: left;
+                            margin-bottom: 14px;
+                            color: #2d2d2d;
+                            margin-top: 0;
+                            font-size: 20px;
                         }
 
-                        .news-title-pane-item-box {
-                            padding: 0 36px;
-                            height: 232px;
+                        .health-conTime {
+                            font-size: 12px;
+                            margin-top: 0;
+                            line-height: 22px;
+                            text-align: left;
+                            color: #9b9b9b;
+                            margin-bottom: 10px;
+                        }
 
-                            .health-conTit {
-                                text-align: left;
-                                margin-bottom: 14px;
-                                color: #2d2d2d;
-                                margin-top: 0;
-                                font-size: 20px;
-                            }
-
-                            .health-conTime {
-                                font-size: 12px;
-                                margin-top: 0;
-                                line-height: 22px;
-                                text-align: left;
-                                color: #9b9b9b;
-                                margin-bottom: 10px;
-                            }
-
-                            .health-content {
-                                font-size: 12px;
-                                margin-top: 0;
-                                line-height: 22px;
-                                text-align: left;
-                                color: #333;
-                                font-weight: 300;
-                            }
-
+                        .health-content {
+                            font-size: 12px;
+                            margin-top: 0;
+                            line-height: 22px;
+                            text-align: left;
+                            color: #333;
+                            font-weight: 300;
                         }
                     }
                 }
-
-
             }
         }
     }
@@ -390,51 +367,45 @@
         padding-top: 50px;
         margin-top: 100px;
 
-        .container {
-            width: 1180px;
-            margin: 0 auto;
-
-            .data-text {
-                p {
-                    text-align: center;
-                    font-size: 22px;
-                    font-weight: 700;
-                    margin-bottom: 80px;
-                }
-            }
-
-            .data-content {
-                width: 900px;
-                margin: 0 auto;
-                display: flex;
-                justify-content: space-around;
-
-                .data-item {
-                    font-size: 20px;
-                    margin-bottom: 20px;
-                    font-weight: 600;
-
-                    .big {
-                        font-size: 52px;
-                        font-weight: 600;
-                        font-family: Arial;
-                    }
-                }
-            }
-
-            .btn {
+        .data-text {
+            p {
                 text-align: center;
-                margin-top: 40px;
+                font-size: 22px;
+                font-weight: 700;
+                margin-bottom: 80px;
+            }
+        }
 
-                button {
-                    border: 2px solid #1a1a1a;
-                    border-radius: 25px;
-                    padding: 0 30px;
-                    font-size: 15px;
-                    background-color: #fff;
+        .data-content {
+            width: 900px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+
+            .data-item {
+                font-size: 20px;
+                margin-bottom: 20px;
+                font-weight: 600;
+
+                .big {
+                    font-size: 52px;
+                    font-weight: 600;
+                    font-family: Arial;
                 }
             }
         }
 
+        .btn {
+            text-align: center;
+            margin-top: 40px;
+
+            button {
+                border: 2px solid #1a1a1a;
+                border-radius: 25px;
+                padding: 0 30px;
+                font-size: 15px;
+                background-color: #fff;
+            }
+        }
     }
 }

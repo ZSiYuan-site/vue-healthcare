@@ -1,23 +1,30 @@
 .apply-nav {
-    width: 100%;
-    height: 60px;
-    background-color: #fff;
-    box-shadow: 0 2px 6px 0 rgb(0 0 0 / 5%);
 
-    .container {
-        text-align: center;
+    // nav
+    .nav {
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0 2px 6px 0 rgb(0 0 0 / 5%);
+        height: 60px;
 
-        .apply-nav-item {
-            display: inline-block;
-            padding: 15px 7px;
-            margin-left: 11px;
-            margin-right: 31px;
-            line-height: 30px;
-            cursor: pointer;
-            font-size: 16px;
+        .container {
+            text-align: center;
+
+            .apply-nav-item {
+                display: inline-block;
+                padding: 15px 7px;
+                margin-left: 11px;
+                margin-right: 31px;
+                line-height: 30px;
+                cursor: pointer;
+                font-size: 16px;
+            }
+
         }
-
     }
+
+    // panel
+    .panel {}
 }
 
 // 吸顶的样式

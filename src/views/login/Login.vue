@@ -2,7 +2,7 @@
   <div class="login">
     <!-- 头部 -->
     <header>
-      <div class="container">
+      <div class="container base-container">
         <div class="logo-box">
           <router-link to="/home">
             <a> AI医疗开放平台 </a>
@@ -12,7 +12,7 @@
     </header>
 
     <!-- 登录区域 -->
-    <div class="container">
+    <div class="container base-container">
       <!-- 登录面板 -->
       <div class="login-panel">
         <div class="login-nav">
@@ -127,4 +127,5 @@ export default {
 
 <style lang="scss" scoped>
 @import "./login.scss";
+@import "../../assets/scss/base.scss";
 </style>

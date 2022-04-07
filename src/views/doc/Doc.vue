@@ -269,4 +269,5 @@ export default {
 
 <style lang="scss" scoped>
 @import "./doc.scss";
+@import "../../assets/scss/base.scss";
 </style>
