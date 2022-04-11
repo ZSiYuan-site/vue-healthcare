@@ -14,6 +14,9 @@ import 'mavon-editor/dist/css/index.css'
 // mock
 // import './mock/mockServer'
 
+// 引入权限拦截
+import './permission'
+
 // css样式还是需要全部引入
 import 'element-ui/lib/theme-chalk/index.css'
 import element from './element/index'

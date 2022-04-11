@@ -2,9 +2,14 @@
   <div class="apply">
     <!-- banner区域 -->
     <div class="apply-banner">
-      <div class="base-container">
-        <div class="demo">
-          <a href="/#/apply/doc/2">技术文档</a>
+      <div class="base-container container">
+        <h1 class="title">人脸识别</h1>
+        <div class="desc">
+          <p>精准实时的人脸检测、分析、识别等服务，在线、离线满足多样需求</p>
+        </div>
+        <div class="btn-group">
+          <el-button type="primary">立即选购</el-button>
+          <el-button>管理控制台</el-button>
         </div>
       </div>
     </div>

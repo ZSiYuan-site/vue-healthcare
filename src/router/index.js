@@ -1,43 +1,39 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-import Login from '../views/login/Login.vue'
-import Home from '../views/home/Home.vue'
-import Apply from '../views/apply/Apply.vue'
-import Doc from '../views/doc/Doc.vue'
-import News from '../views/news/News.vue'
-
-import Layout from '../components/layout/Layout.vue'
-
 Vue.use(VueRouter)
 
 const routes = [{
   path: '/login',
-  component: Login
+  component: () => import('@/views/login/Login.vue')
+  // component: Login
 },
 {
   path: '/',
-  component: Layout,
+  component: import('@/components/layout/Layout.vue'),
   children: [{
     // 默认展示home页面
     path: '',
-    component: Home
+    component: () => import('@/views/home/Home.vue')
   }, {
     path: '/home',
-    component: Home,
+    component: () => import('@/views/home/Home.vue'),
     name: 'home'
   },
   {
     path: '/apply/:id',
-    component: Apply
+    component: () => import('@/views/apply/Apply.vue')
   },
   {
     path: 'apply/doc/:id',
-    component: Doc
+    component: () => import('@/views/doc/Doc.vue')
   },
   {
     path: '/news',
-    component: News
+    component: () => import('@/views/news/News.vue')
+  }, {
+    path: '/404',
+    component: () => import('@/views/notFound/NotFound.vue')
   }
   ]
 }
