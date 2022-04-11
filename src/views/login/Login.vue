@@ -31,13 +31,23 @@
         <div class="login-form">
           <!-- 账号登录 -->
           <div class="login-tab" v-show="isAccountLogin">
-            <el-form>
-              <el-form-item>
-                <el-input placeholder="账号"></el-input>
+            <el-form
+              :model="accountLoginForm"
+              :rules="accountLoginFormRules"
+              ref="accountLoginFormRef"
+            >
+              <el-form-item prop="username">
+                <el-input
+                  placeholder="账号"
+                  v-model="accountLoginForm.username"
+                ></el-input>
               </el-form-item>
 
-              <el-form-item>
-                <el-input placeholder="密码"></el-input>
+              <el-form-item prop="password">
+                <el-input
+                  placeholder="密码"
+                  v-model="accountLoginForm.password"
+                ></el-input>
               </el-form-item>
 
               <el-form-item>
@@ -46,7 +56,13 @@
               </el-form-item>
 
               <el-form-item>
-                <el-button type="primary" round size="mini">登录</el-button>
+                <el-button
+                  type="primary"
+                  round
+                  size="mini"
+                  @click="accountLoginSubmit"
+                  >登录</el-button
+                >
                 <span class="register-now">
                   没有账号?
                   <a href="javascript:;">
@@ -101,18 +117,56 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
+import { SAVE_USERINFO } from '@/store/mutation-types'
 export default {
   name: 'HealthcareLogin',
 
   data () {
     return {
-      isAccountLogin: true
+      // 控制是否是账号登录
+      isAccountLogin: true,
+      // 账号登录表单
+      accountLoginForm: {
+        username: '',
+        password: ''
+      },
+      // 账号登录表单验证规则
+      accountLoginFormRules: {
+        username: [
+          { required: true, message: '请输入用户名', trigger: 'blur' },
+          {
+            min: 3,
+            max: 10,
+            message: '用户名长度在 3 到 10 个字符',
+            trigger: 'blur'
+          }
+        ],
+        password: [
+          { required: true, message: '请输入密码', trigger: 'blur' },
+          {
+            min: 3,
+            max: 10,
+            message: '密码长度在 3 到 10 个字符',
+            trigger: 'blur'
+          }
+        ]
+      }
     }
   },
 
+  created () {},
   mounted () {},
 
   methods: {
+    // 点击提交账号登录的表单进行登录
+    accountLoginSubmit () {
+      this.$refs.accountLoginFormRef.validate(async (valid) => {
+        if (!valid) return
+        this.$store.dispatch(SAVE_USERINFO, this.accountLoginForm)
+      })
+      // console.log(this.accountLoginForm);
+    },
     // 点击上边的导航
     handleLoginNav (flag) {
       if (flag) {
@@ -121,6 +175,13 @@ export default {
         this.isAccountLogin = false
       }
     }
+  },
+  computed: {
+    ...mapState({
+      // userInfo: (state) => {
+      //   state.userInfo;
+      // },
+    })
   }
 }
 </script>

@@ -573,9 +573,7 @@ export default {
       //   delay: 1000,//时间 毫秒
       //   disableOnInteraction: false,//用户操作之后是否停止自动轮播默认true
       // },
-
     })
-
     swiper()
   },
 

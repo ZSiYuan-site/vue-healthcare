@@ -49,8 +49,8 @@
         </div>
       </div>
 
-    <!-- 功能演示 -->
-    <div class="panel-item"></div>
+      <!-- 功能演示 -->
+      <div class="panel-item"></div>
       <div
         class="panel-item"
         style="height: 400px; border: 1px solid; background: red"
@@ -88,7 +88,7 @@ export default {
         document.pageYOffset ||
         document.documentElement.scrollTop ||
         document.body.scrollTop
-      console.log(scrollTop)
+      // console.log(scrollTop)
       this.isFixed = scrollTop >= 510
     }
   }

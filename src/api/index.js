@@ -18,8 +18,18 @@ export const getApplyInfo = (applyName) => myAxios({
 })
 
 // 新增信息
-export const addApplyInfo = (ApplyInfo) => myAxios({
-  url: '/addApply',
+// export const addApplyInfo = (ApplyInfo) => myAxios({
+//   url: '/addApply',
+//   method: 'post',
+//   data: ApplyInfo
+// })
+
+// 用户登录
+export const login = (username, password) => myAxios({
+  url: '/api/user/login',
   method: 'post',
-  data: ApplyInfo
+  data: {
+    username,
+    password
+  }
 })
