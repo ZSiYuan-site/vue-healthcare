@@ -6,7 +6,12 @@
 import nprogress from 'nprogress'
 import './nprogress/progress.css'
 
+// 引入路由
 import router from './router/index'
+
+import {
+  getToken
+} from './utils/auth'
 
 // 白名单
 const whiteLists = ['/login', '404']
@@ -15,10 +20,9 @@ const whiteLists = ['/login', '404']
  * 路由前置守卫
  */
 router.beforeEach((to, from, next) => {
-  const token = localStorage.getItem('token')
   nprogress.start()
   // 有token
-  if (token) {
+  if (getToken()) {
     // 有token并且去登录页面,那么就之直接跳转到首页
     if (to.path === '/login') {
       next('/')

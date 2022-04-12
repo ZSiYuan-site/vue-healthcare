@@ -36,6 +36,9 @@ const routes = [{
     path: '/news',
     component: () => import('@/views/news/News.vue')
   }, {
+    path: '/about',
+    component: () => import('@/views/about/About.vue')
+  }, {
     path: '/404',
     component: () => import('@/views/notFound/NotFound.vue')
   }

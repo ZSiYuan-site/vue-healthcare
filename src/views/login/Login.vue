@@ -163,7 +163,12 @@ export default {
     accountLoginSubmit () {
       this.$refs.accountLoginFormRef.validate(async (valid) => {
         if (!valid) return
+        // 分发action，将数据存储到vuex中
         this.$store.dispatch(SAVE_USERINFO, this.accountLoginForm)
+        this.$message({
+          message: '登录成功',
+          type: 'success'
+        })
       })
       // console.log(this.accountLoginForm);
     },

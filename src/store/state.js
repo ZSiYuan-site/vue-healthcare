@@ -1,5 +1,10 @@
+import {
+  getToken
+} from '../utils/auth'
+
 export default {
-  initState: '初始的测试数据',
+  // 先直接从本地读取token
+  token: getToken(),
   // 用户信息
-  userInfo: {}
+  userInfo: JSON.parse(localStorage.getItem('userInfo'))
 }

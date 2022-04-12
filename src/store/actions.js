@@ -1,4 +1,5 @@
 import {
+  SET_TOKEN,
   SAVE_USERINFO
 } from './mutation-types'
 
@@ -17,10 +18,12 @@ export default {
     password
   }) {
     const result = await login(username, password)
-    // 将token存储的本地
-    localStorage.setItem('token', result.data.token)
+    // 调用设置token的mutation
+    result.code === 0 && commit(SET_TOKEN, result.data.token)
+    delete result.data.token
+    // 保存用户信息到vuex
+    commit(SAVE_USERINFO, result.data)
     // 跳转路由到首页
     router.push('/home')
-    commit(SAVE_USERINFO, result.data)
   }
 }

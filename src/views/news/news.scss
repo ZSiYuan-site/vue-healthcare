@@ -1,0 +1,109 @@
+.news {
+    height: 600px;
+
+    // banner
+    .news-banner {
+        width: 100%;
+        height: 256px;
+        background: url('./image/news-bg.jpg') no-repeat;
+        background-size: cover;
+
+        .news-banner-title {
+            font-size: 48px;
+            color: #fff;
+            line-height: 256px;
+        }
+    }
+
+    // 主体内容
+    .news-content {
+        // 面包屑导航
+        .container {
+            border-bottom: 1px solid #ebece9;
+
+            .el-breadcrumb {
+                height: 85px;
+                width: 100%;
+                line-height: 85px;
+            }
+        }
+
+        // 新闻的主要内容
+        .news-article {
+            display: block;
+            width: 100%;
+            height: 800px;
+            background-color: red;
+
+            .container {
+                display: flex;
+                border-bottom: none;
+                height: 800px;
+                width: 1180px;
+                // 左边
+                .news-article-left {
+                    width: 760px;
+                    margin-right: 86px;
+
+                    .news-article-left-item {
+                        border-bottom: 1px solid #ebebeb;
+                        padding: 32px 0 36px;
+                        .item-info-img {
+                            margin-right: 20px;
+
+                            img {
+                                width: 200px;
+                                height: 130px;
+                            }
+                        }
+
+                        .item-info {
+                            display: flex;
+
+                            .item-info-detail {
+                                .item-info-detail-title {
+                                    font-size: 20px;
+                                    font-weight: 700;
+                                    color: #2d2d2d;
+                                }
+
+                                .item-info-detail-desc {
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                    color: #333;
+                                    line-height: 24px;
+                                    height: 76px;
+                                    // overflow: hidden;
+                                    // -webkit-line-clamp: 4;
+                                    // display: -webkit-box;
+                                    // -webkit-box-orient: vertical;
+                                    text-overflow: ellipsis;
+                                    margin-top: 9px;
+                                    margin-bottom: 0;
+                                }
+
+                                .item-info-detail-time {
+                                    bottom: 0;
+                                    margin: 0;
+                                    font-size: 12px;
+                                    color: #707070;
+
+                                    .first {
+                                        display: inline-block;
+                                        margin-right: 22px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+
+                // 右边
+                .news-article-aside {}
+            }
+
+        }
+
+    }
+}

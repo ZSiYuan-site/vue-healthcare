@@ -118,19 +118,28 @@
                 right: 10px;
 
                 .top-nav-item-text {
+                    &:hover{
+                        .children{
+                            display: block;
+                            height: 80px;
+                            opacity: 1;
+                            transition: all 0.2s;
+                        }
+                    }
+                    // 右侧的下拉
                     .children {
                         box-shadow: none;
                         display: block;
+                        opacity: 0;
                         border-radius: 5px;
                         width: 100px;
-                        height: 80px;
+                        height: 0;
                         background: #fff;
                         position: absolute;
                         opacity: 1;
                         left: 0px;
                         top: 60px;
                         overflow: hidden;
-
                         li {
                             text-align: center;
                             height: 30px;
@@ -138,6 +147,9 @@
                             padding: 2px;
                             display: block;
                             color: #595959;
+                            &:hover{
+                                color: #3b85f5;
+                            }
                         }
                     }
                 }

@@ -1,6 +1,6 @@
 <template>
   <div class="footer">
-    <div class="container">
+    <div class="base-container container">
       <div class="footer-logo">logo</div>
 
       <div class="footer-content">
@@ -92,4 +92,5 @@ export default {
 
 <style lang="scss" scoped>
 @import "./footer.scss";
+@import '@/assets/scss/base.scss';
 </style>

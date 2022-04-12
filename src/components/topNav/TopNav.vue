@@ -83,22 +83,24 @@
           </div>
 
           <div class="top-nav-item">
-            <span class="top-nav-item-text">开放能力</span>
+            <router-link to="/news">
+              <span class="top-nav-item-text">新闻资讯</span>
+            </router-link>
           </div>
 
           <div class="top-nav-item">
-            <span class="top-nav-item-text">开放能力</span>
+            <span class="top-nav-item-text">关于我们</span>
           </div>
 
           <div class="top-nav-item register-login">
             <template>
-              <span class="top-nav-item-text" @click="gotoLogin" v-if="username"
+              <span class="top-nav-item-text" v-if="username"
                 >{{ username }}
                 <i class="iconfont icon-arrow-down"></i>
                 <!-- 下拉展示区域 -->
                 <ul class="children">
                   <li>个人中心</li>
-                  <li>退出</li>
+                  <li @click="logout">退出</li>
                 </ul>
               </span>
               <span class="top-nav-item-text" v-else> 注册 / 登录 </span>
@@ -111,6 +113,7 @@
 </template>
 <script>
 import { mapState } from 'vuex'
+import { REMOVE_TOKEN } from '@/store/mutation-types'
 export default {
   name: 'HealthcareTopnav',
 
@@ -121,16 +124,11 @@ export default {
   mounted () {},
 
   methods: {
-    // 点击前往登录页面
-    gotoLogin () {
-      console.log(this.$store.state.userInfo.username)
-      if (this.$store.state.userInfo.username) {
-        console.log('test')
-      } else {
-        this.$router.push({
-          name: 'login'
-        })
-      }
+    // 点击退出登录
+    logout () {
+      this.$store.commit(REMOVE_TOKEN)
+      delete this.$store.state.userInfo
+      this.$router.push('/login')
     }
   },
 

@@ -60,9 +60,15 @@ a:focus {
 }
 
 // 清楚浮动
-.clearfix{
+.clearfix {
     display: block;
     content: '';
     clear: both;
     overflow: hidden;
+}
+
+
+// 新闻资讯页面的面包屑导航
+.el-breadcrumb__inner {
+    font-size: 16px;
 }

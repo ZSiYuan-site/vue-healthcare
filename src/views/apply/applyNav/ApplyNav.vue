@@ -96,8 +96,13 @@
 
             <!-- 身体 -->
             <div class="function-content-body">
-              <div class="function-content-body-left">左边</div>
-              <div class="function-content-body-right">右边</div>
+              <div class="function-content-body-left">
+                <div class="left-panel">111</div>
+              </div>
+              <div class="function-content-body-right">
+                <div class="right-panel">122</div>
+                右边
+              </div>
             </div>
           </div>
         </div>
