@@ -91,9 +91,18 @@
           </div>
 
           <div class="top-nav-item register-login">
-            <span class="top-nav-item-text" @click="gotoLogin">
-              {{ username ? username : "注册 / 登录" }}</span
-            >
+            <template>
+              <span class="top-nav-item-text" @click="gotoLogin" v-if="username"
+                >{{ username }}
+                <i class="iconfont icon-arrow-down"></i>
+                <!-- 下拉展示区域 -->
+                <ul class="children">
+                  <li>个人中心</li>
+                  <li>退出</li>
+                </ul>
+              </span>
+              <span class="top-nav-item-text" v-else> 注册 / 登录 </span>
+            </template>
           </div>
         </div>
       </div>

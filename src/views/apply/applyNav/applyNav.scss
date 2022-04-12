@@ -1,0 +1,251 @@
+.apply-nav {
+
+    // nav
+    .nav {
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0 2px 6px 0 rgb(0 0 0 / 5%);
+        height: 60px;
+
+        .container {
+            text-align: center;
+
+            .apply-nav-item {
+                display: inline-block;
+                padding: 15px 7px;
+                margin-left: 11px;
+                margin-right: 31px;
+                line-height: 30px;
+                cursor: pointer;
+                font-size: 16px;
+            }
+        }
+    }
+
+    // panel
+    .panel {
+
+        // 公共的title样式
+        .intro-title {
+            font-size: 24px;
+            text-align: center;
+            margin: 10px 0;
+        }
+
+
+        // 人脸识别简介
+        .panel-item-intro {
+            height: 300px;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            background-color: #f7f8fa;
+
+            // 左侧
+            .panel-item-intro-left {
+                width: 750px;
+                padding-right: 20px;
+                float: left;
+
+                .intro-title {
+                    text-align: left;
+
+                    img {
+                        vertical-align: middle;
+                        margin-right: 22px;
+                    }
+                }
+
+                .intro-info {
+                    font-size: 14px;
+                    color: #666;
+                }
+            }
+
+            // 右侧
+            .panel-item-intro-aside {
+                padding-top: 10px;
+                float: right;
+
+                .aside-title {
+                    font-size: 24px;
+                    color: #000;
+                    line-height: 28px;
+                    margin-top: 4px;
+                }
+
+                .aside-ul {
+                    margin-top: 26px;
+
+                    .aside-li {
+                        margin-bottom: 12px;
+                        font-size: 14px;
+                        color: #333;
+                        line-height: 24px;
+
+                        i {
+                            font-size: 12px;
+                            padding: 3px;
+                            border: 1px solid;
+                            border-color: #FF7800;
+                            color: #FF7800;
+                        }
+                    }
+                }
+            }
+
+        }
+
+
+        // 产品视频演示
+        .panel-item-video {
+            height: 600px;
+            padding: 10px;
+            background-color: #fff;
+            margin-bottom: 30px;
+
+            // 图片占位
+            .click-img {
+                width: 800px;
+                height: 500px;
+                text-align: center;
+                position: relative;
+                margin: auto;
+
+                .click-icon {
+                    display: inline-block;
+                    width: 50px;
+                    height: 50px;
+                    background-color: rgba(0, 0, 0, 0.5);
+                    text-align: center;
+                    border-radius: 50%;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    margin: auto;
+
+                    i {
+                        line-height: 50px;
+                        color: #fff;
+                        font-size: 30px;
+                    }
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            // 视频部分
+            .vide-box {
+
+                // 遮罩层
+                .overlay {
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: #333;
+                    opacity: 0.4;
+                }
+
+                .video {
+                    text-align: center;
+                    position: fixed;
+                    left: 50%;
+                    top: -50%;
+                    transform: translate(-50%, -50%);
+                    opacity: 0;
+                    transition: all 0.5s;
+
+                    &.slide {
+                        top: 50%;
+                        opacity: 1;
+                    }
+
+                    video {
+                        width: 100%;
+                        height: 100%;
+                        outline: none;
+                        object-fit: cover;
+                    }
+
+                    // 关闭按钮
+                    .icon-close {
+                        position: absolute;
+                        right: 3px;
+                        top: 3px;
+                        z-index: 9;
+                        cursor: pointer;
+
+                        i {
+                            color: #fff;
+                        }
+                    }
+                }
+
+            }
+
+        }
+
+        // 功能演示
+        .panel-item-function {
+            height: 700px;
+            background-color: yellowgreen;
+
+            .function-content {
+                width: 1180px;
+                height: 600px;
+                display: block;
+                flex-direction: column;
+                justify-content: flex-start;
+                box-sizing: border-box;
+                padding: 30px 24px 12px;
+                background: url('./image/function-bg.png') no-repeat;
+                background-size: 100% 100%;
+
+                // 头部
+                .function-content-head {
+                    .function-content-head-title {
+                        height: 22px;
+                        line-height: 22px;
+                        font-size: 16px;
+                        color: #333;
+                        font-weight: 500;
+                        padding-left: 6px;
+                        border-left: 4px solid #00A4FF;
+                    }
+
+                    .function-content-head--desc {
+                        line-height: 22px;
+                        padding-top: 8px;
+                        font-size: 14px;
+                        color: #666;
+                    }
+                }
+
+                // 身体
+                .function-content-body {
+                    height: 100%;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    .function-content-body-left{
+                        width: 700px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 吸顶的样式
+.is_fixed {
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}

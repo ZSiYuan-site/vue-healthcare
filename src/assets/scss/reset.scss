@@ -58,3 +58,11 @@ input:focus,
 a:focus {
     outline: none;
 }
+
+// 清楚浮动
+.clearfix{
+    display: block;
+    content: '';
+    clear: both;
+    overflow: hidden;
+}

@@ -107,13 +107,40 @@
                         color: #3b85f5;
                         cursor: pointer;
                     }
+
+
                 }
             }
 
             // 登录注册盒子
             .register-login {
-              position: absolute;  
-              right: 10px;
+                position: absolute;
+                right: 10px;
+
+                .top-nav-item-text {
+                    .children {
+                        box-shadow: none;
+                        display: block;
+                        border-radius: 5px;
+                        width: 100px;
+                        height: 80px;
+                        background: #fff;
+                        position: absolute;
+                        opacity: 1;
+                        left: 0px;
+                        top: 60px;
+                        overflow: hidden;
+
+                        li {
+                            text-align: center;
+                            height: 30px;
+                            line-height: 50px;
+                            padding: 2px;
+                            display: block;
+                            color: #595959;
+                        }
+                    }
+                }
             }
         }
     }

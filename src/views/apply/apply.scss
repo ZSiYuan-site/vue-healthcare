@@ -9,22 +9,42 @@
         background-size: 100% 100%;
 
         .container {
-            padding: 30px;
+            padding: 50px;
+            position: relative;
 
-            .title {
-                height: 56px;
-                overflow: hidden;
-                color: #fff;
+            // 左侧
+            .apply-banner-left {
+                .title {
+                    height: 56px;
+                    overflow: hidden;
+                    color: #fff;
+                    font-size: 32px;
+                    line-height: 48px;
+                }
+
+                .desc {
+                    color: #fff;
+                    font-size: 14px;
+                    line-height: 30px;
+                    height: 56px;
+                }
+
+                .btn-group {}
             }
 
-            .desc {
-                color: #fff;
-                font-size: 14px;
-                line-height: 30px;
-                height: 56px;
+            // 右侧
+            .apply-banner-right {
+                background: url('./image/apply1.png') no-repeat;
+                width: 418px;
+                height: 300px;
+                bottom: 0;
+                perspective: 800px;
+                background-size: cover;
+                position: absolute;
+                right: 12px;
+                top: -10px
             }
 
-            .btn-group {}
         }
     }
 }
