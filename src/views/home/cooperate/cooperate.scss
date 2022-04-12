@@ -1,0 +1,101 @@
+ // 合作伙伴
+ .cooperate {
+     padding-top: 40px;
+     padding-bottom: 40px;
+
+     // 公共的线
+     .underline {
+         padding-top: 15px;
+         text-align: center;
+         margin-bottom: 20px;
+
+         .line {
+             width: 15%;
+             height: 1px;
+             background-color: rgba(1, 1, 1, .4);
+             display: inline-block;
+         }
+
+         .circle {
+             display: inline-block;
+             margin: 0 15px;
+             width: 8px;
+             height: 8px;
+             background-color: #000;
+             border-radius: 50%;
+         }
+     }
+
+
+     .cooperate-title {
+         text-align: center;
+         font-size: 26px;
+         font-family: Source Han Sans CN;
+         font-weight: 400;
+     }
+
+     .cooperate-content {
+         .cooperate-item {
+             display: flex;
+             margin: 30px;
+
+             .cooperate-item-img {}
+
+             .cooperate-item-right-box {
+                 padding: 15px 20px 15px 30px;
+                 text-align: right;
+                 height: 260px;
+
+                 .cooperate-item-right-box-title {
+                     text-align: left;
+                     font-size: 20px;
+                     font-weight: 500;
+                     font-family: Source Han Sans CN;
+                     color: #333;
+                 }
+
+                 .cooperate-item-right-box-context {
+                     padding-top: 10px;
+                     padding-right: 20px;
+                     text-align: left;
+                     font-size: 14px;
+                     line-height: 20px;
+                 }
+
+
+                 .cooperate-item-right-box-partner {
+                     text-align: left;
+                     font-size: 20px;
+                     font-weight: 500;
+                     font-family: Source Han Sans CN;
+                     color: #333;
+                     padding-top: 25px;
+                 }
+
+                 .partner-box {
+                     padding-top: 15px;
+
+                     .every-partner {
+                         width: 115px;
+                         height: 50px;
+                         float: left;
+                         padding: 10px 0;
+                         width: 115px;
+                         text-align: center;
+                         margin-right: 20px;
+                         height: 50px;
+                         background: #fff;
+                         box-shadow: 0 2px 4px 0 rgb(0 0 0 / 18%);
+
+                         img {
+                             width: 70%;
+                             height: 100%;
+                         }
+                     }
+
+                 }
+             }
+
+         }
+     }
+ }

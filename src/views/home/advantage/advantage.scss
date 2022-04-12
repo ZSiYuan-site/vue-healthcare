@@ -1,0 +1,70 @@
+.advantage {
+    background-color: #f7f7f7;
+    margin-top: 20px;
+    width: 100%;
+    height: 500px;
+    padding-top: 40px;
+
+    // 公共的线
+    .underline {
+        padding-top: 15px;
+        text-align: center;
+        margin-bottom: 20px;
+
+        .line {
+            width: 15%;
+            height: 1px;
+            background-color: rgba(1, 1, 1, .4);
+            display: inline-block;
+        }
+
+        .circle {
+            display: inline-block;
+            margin: 0 15px;
+            width: 8px;
+            height: 8px;
+            background-color: #000;
+            border-radius: 50%;
+        }
+    }
+
+    .advantage-title {
+        text-align: center;
+        font-size: 26px;
+        font-family: Source Han Sans CN;
+        font-weight: 400;
+    }
+
+    .advantage-content {
+        display: flex;
+        justify-content: space-around;
+
+        .advantage-content-item {
+            width: 216px;
+
+            i {
+                display: block;
+                margin: 0 auto;
+                height: 150px;
+                width: 150px;
+                overflow: hidden;
+
+                img {
+                    height: 100%;
+                }
+            }
+
+            h3 {
+                text-align: center;
+                margin-top: 10px;
+                margin-bottom: 18px;
+            }
+
+            .health-content {
+                text-align: center;
+                color: #333;
+                font-weight: 400;
+            }
+        }
+    }
+}

@@ -1,0 +1,139 @@
+// 开放能力
+.ability {
+    margin-top: 40px;
+
+    // 公共的线
+    .underline {
+        padding-top: 15px;
+        text-align: center;
+        margin-bottom: 20px;
+
+        .line {
+            width: 15%;
+            height: 1px;
+            background-color: rgba(1, 1, 1, .4);
+            display: inline-block;
+        }
+
+        .circle {
+            display: inline-block;
+            margin: 0 15px;
+            width: 8px;
+            height: 8px;
+            background-color: #000;
+            border-radius: 50%;
+        }
+    }
+
+    .ability-title {
+        text-align: center;
+        font-size: 26px;
+        font-family: Source Han Sans CN;
+        font-weight: 400;
+    }
+
+    .ability-content {
+
+        // 导航
+        .ability-tabs-header {
+
+            // 激活
+            .AbilityNavActive {
+                border-bottom: 3px solid;
+                font-weight: bold;
+            }
+
+            display: flex;
+            justify-content: space-around;
+            border-bottom: 1px solid #dadcdf;
+            text-align: left;
+
+            .ability-tabs-item {
+                padding-bottom: 18px;
+                margin-left: 93px;
+                font-size: 16px;
+                line-height: 20px;
+                color: #000;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        // 主体
+
+        .ability-tabs-pane {
+
+            color: #000;
+            padding-top: 40px;
+
+            .ability-tabs-pane-content-item {
+                position: relative;
+
+                .ability-tabs-pane-content {
+                    width: 685px;
+
+                    .ability-tabs-pane-content-title {
+                        margin-bottom: 24px;
+                        font-size: 16px;
+                        line-height: 24px;
+                        font-weight: 600;
+                    }
+
+                    .ability-tabs-pane-content-desc {
+                        margin-bottom: 20px;
+                        font-size: 14px;
+                        line-height: 24px;
+                    }
+
+                    .ability-tabs-pane-content-btn {
+                        margin-bottom: 40px;
+                        -webkit-box-sizing: border-box;
+                        -moz-box-sizing: border-box;
+                        box-sizing: border-box;
+                        display: block;
+                        width: 92px;
+                        height: 32px;
+                        font-size: 14px;
+                        line-height: 32px;
+                        text-align: center;
+                        color: #000;
+                        border: 1px solid #000;
+                    }
+
+                    .ability-tabs-pane-content-pratice {
+                        margin-bottom: 24px;
+                        font-size: 16px;
+                        line-height: 24px;
+                        font-weight: 600;
+                    }
+
+                    .ability-tabs-pane-content-list {
+                        a {
+                            margin-right: 40px;
+
+                            img {
+                                height: 54px;
+                                width: auto;
+                            }
+                        }
+                    }
+                }
+
+                .ability-tabs-pane-content-item-img {
+                    position: absolute;
+                    width: 419px;
+                    height: auto;
+                    top: 50%;
+                    right: 0;
+                    -webkit-transform: translateY(-50%);
+                    -moz-transform: translateY(-50%);
+                    -ms-transform: translateY(-50%);
+                    transform: translateY(-50%);
+                }
+            }
+        }
+    }
+
+}
