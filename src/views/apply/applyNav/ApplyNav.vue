@@ -63,7 +63,7 @@
           <div class="vide-box">
             <!-- 遮罩层 -->
             <div class="overlay" v-if="showSlide"></div>
-            <!-- 视频 -->
+            <!-- 弹出的视频 -->
             <div class="video" :class="{ slide: showSlide }">
               <!-- 视频右上角的叉号 -->
               <span class="icon-close" @click="showSlide = false">
@@ -97,10 +97,43 @@
             <!-- 身体 -->
             <div class="function-content-body">
               <div class="function-content-body-left">
-                <div class="left-panel">111</div>
+                <div class="left-panel">
+                  <div class="show-room">
+                    <img :src="currentShowImg" alt="" class="showImg" />
+                    <!-- 扫描 -->
+                    <div class="wrapper"></div>
+                    <!-- 透明区域 -->
+                    <span class="transparent-area">
+                      <span class="transparent-area-left">
+                        <p>图片文件类型</p>
+                        <p>为了避免</p>
+                        <p>注：Demo体验</p>
+                      </span>
+                      <span class="transparent-area-btn">
+                        本地上传
+                        <!-- <a href="javascript:;" class="upload">本地上传</a> -->
+                      </span>
+                    </span>
+                  </div>
+
+                  <!-- 旋转木马 -->
+                  <div class="carousel">
+                    <ul class="carousel-ul">
+                      <li
+                        :class="{ 'active-border': currentImgIndex === index }"
+                        class="carousel-li"
+                        v-for="(item, index) in demoImgArr"
+                        :key="index"
+                        @click="changeImg(index)"
+                      >
+                        <img :src="item" alt="" />
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
               <div class="function-content-body-right">
-                <div class="right-panel">122</div>
+                <div class="right-panel"></div>
                 右边
               </div>
             </div>
@@ -117,6 +150,19 @@ export default {
 
   data () {
     return {
+      // demo图片数组
+      demoImgArr: [
+        require('./image/person.jpg'),
+        require('./image/person2.jpg'),
+        require('./image/person.jpg'),
+        require('./image/person2.jpg'),
+        require('./image/person.jpg')
+      ],
+      // 记录当前所选中的图片
+      currentImgIndex: 0,
+      // 当前所展示的图片
+      currentShowImg: require('./image/person.jpg'),
+      // 控制吸顶的
       isFixed: false,
       // 控制的遮罩层是否展示
       showSlide: false
@@ -125,9 +171,39 @@ export default {
 
   mounted () {
     window.addEventListener('scroll', this.initHeight)
+    this.moveAnimation()
   },
 
   methods: {
+    // 扫描的动画封装
+    moveAnimation () {
+      const style = document.createElement('style')
+      style.setAttribute('type', 'text/css')
+      document.head.appendChild(style)
+      const sheet = style.sheet
+      sheet.insertRule(`
+      @keyframes move {
+          to {
+              background-position: 0 100%, 0 0, 0 0, 0 0;
+              /* 终止位置 */
+              clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+          }
+        }`)
+      setTimeout(() => {
+        sheet.removeRule(0)
+        // 展示关键点 todo
+      }, 3000)
+    },
+
+    // 点击切换图片
+    changeImg (index) {
+      this.currentImgIndex = index
+      this.currentShowImg = this.demoImgArr[index]
+      // 切换图片后就执行动画
+      setTimeout(() => {
+        this.moveAnimation()
+      }, 500)
+    },
     // 滚动吸顶
     initHeight () {
       // 在谷歌中： document.pageYOffset  ===   document.documentElement.scrollTop
@@ -138,7 +214,7 @@ export default {
         document.documentElement.scrollTop ||
         document.body.scrollTop
       // console.log(scrollTop)
-      this.isFixed = scrollTop >= 510
+      this.isFixed = scrollTop >= 360
     }
   }
 }

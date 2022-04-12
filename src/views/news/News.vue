@@ -41,7 +41,28 @@
                 </div>
               </a>
             </div>
-               <div class="news-article-left-item">
+
+            <div class="news-article-left-item">
+              <a href="javascript:;">
+                <div class="item-info">
+                  <div class="item-info-img">
+                    <img src="./image/news-info-img.png" alt="" />
+                  </div>
+                  <div class="item-info-detail">
+                    <h2 class="item-info-detail-title">腾讯杏林计划</h2>
+                    <p class="item-info-detail-desc">
+                      腾讯推出“腾讯杏林计划”，希望激发医疗健康行业每一位参与者进行数字创新，共筑数字医疗共同体。
+                    </p>
+                    <p class="item-info-detail-time">
+                      <span class="first">来源：腾讯医疗健康</span>
+                      <span>2020/09/10</span>
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+             <div class="news-article-left-item">
               <a href="javascript:;">
                 <div class="item-info">
                   <div class="item-info-img">

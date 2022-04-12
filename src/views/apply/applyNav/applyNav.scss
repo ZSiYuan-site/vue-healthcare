@@ -1,4 +1,5 @@
 .apply-nav {
+    height: 1000px;
 
     // nav
     .nav {
@@ -146,6 +147,7 @@
                     position: fixed;
                     top: 0;
                     left: 0;
+                    z-index: 99;
                     width: 100%;
                     height: 100%;
                     background: #333;
@@ -155,6 +157,7 @@
                 .video {
                     text-align: center;
                     position: fixed;
+                    z-index: 99;
                     left: 50%;
                     top: -50%;
                     transform: translate(-50%, -50%);
@@ -194,11 +197,11 @@
         // 功能演示
         .panel-item-function {
             height: 700px;
-            background-color: yellowgreen;
+            // background-color: yellowgreen;
 
             .function-content {
                 width: 1180px;
-                height: 600px;
+                height: 870px;
                 display: block;
                 flex-direction: column;
                 justify-content: flex-start;
@@ -236,17 +239,17 @@
                     justify-content: flex-start;
 
                     .function-content-body-left {
-                        height: 600px;
+                        // height: 625px;
                         padding: 13px;
-                        width: 700px;
+                        width: 640px;
                         cursor: pointer;
                         display: flex;
 
                         .left-panel {
                             cursor: pointer;
-                            padding: 10px;
+                            padding: 20px;
                             width: 100%;
-                            height: 400px;
+                            height: 650px;
                             background: linear-gradient(to left, #03A9F3, #03A9F3) left top no-repeat, linear-gradient(to bottom, #03A9F3, #03A9F3) left top no-repeat, linear-gradient(to left, #03A9F3, #03A9F3) right top no-repeat, linear-gradient(to bottom, #03A9F3, #03A9F3) right top no-repeat, linear-gradient(to left, #03A9F3, #03A9F3) left bottom no-repeat, linear-gradient(to bottom, #03A9F3, #03A9F3) left bottom no-repeat, linear-gradient(to left, #03A9F3, #03A9F3) right bottom no-repeat, linear-gradient(to left, #03A9F3, #03A9F3) right bottom no-repeat;
                             background-size: 2px 20px, 20px 2px, 2px 20px, 20px 2px;
                             transition: all .4s ease;
@@ -256,6 +259,127 @@
                                 border: 1px solid #03A9F3
                             }
 
+                            .show-room {
+                                height: 480px;
+                                width: 100%;
+                                background-color: #f2f6fa;
+                                text-align: center;
+                                position: relative;
+                                line-height: 480px;
+
+                                // 扫描
+                                .wrapper {
+                                    position: absolute;
+                                    top: 0px;
+                                    width: 572px;
+                                    height: 480px;
+                                    background:
+                                        linear-gradient(#1a98ca, #1a98ca),
+                                        linear-gradient(90deg, #ffffff33 1px, transparent 0, transparent 19px),
+                                        linear-gradient(#ffffff33 1px, transparent 0, transparent 19px),
+                                        linear-gradient(transparent, #1a98ca);
+                                    background-size: 100% 1.5%, 10% 100%, 100% 8%, 100% 100%;
+                                    background-repeat: no-repeat, repeat, repeat, no-repeat;
+                                    background-position: 0% 0%, 0 0, 0 0, 0 0;
+                                    /* 初始位置 */
+                                    clip-path: polygon(0% 0%, 100% 0%, 100% 1.5%, 0% 1.5%);
+                                    /* 添加动画效果 */
+                                    animation: move 2s infinite linear;
+                                }
+
+                                // 扫描的动画
+                                // @keyframes move {
+                                //     to {
+                                //         background-position: 0 100%, 0 0, 0 0, 0 0;
+                                //         clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+                                //     }
+                                // }
+
+                                // 客户上传的图片
+                                .showImg {
+                                    max-height: 100%;
+                                    max-width: 100%;
+                                    // width: 100%;
+                                    // height: 100%;
+                                }
+
+                                // 透明区域
+                                .transparent-area {
+                                    width: 100%;
+                                    height: 100px;
+                                    background: rgba(0, 0, 0, 0.3);
+                                    display: inline-block;
+                                    position: absolute;
+                                    z-index: 10;
+                                    bottom: 0;
+                                    left: 0px;
+                                    padding-top: 30px;
+                                    padding-left: 20px;
+                                    padding-right: 20px;
+                                    display: flex;
+                                    justify-content: space-between;
+
+                                    .transparent-area-left {
+                                        p {
+                                            text-align: left;
+                                            line-height: 17px;
+                                            color: rgba(255, 255, 255, 0.938);
+                                        }
+                                    }
+
+                                    // 图片上传按钮
+                                    .transparent-area-btn {
+                                        display: block;
+                                        width: 100px;
+                                        height: 40px;
+                                        background-color: rgb(32, 0, 236);
+                                        line-height: 40px;
+                                        text-align: center;
+                                        font-size: 14px;
+                                        color: #fff;
+                                    }
+                                }
+                            }
+
+                            // 旋转木马
+                            .carousel {
+                                padding: 20px 0;
+                                background-color: #fff;
+
+                                .carousel-ul {
+                                    display: flex;
+                                    justify-content: space-between;
+
+                                    .carousel-li {
+                                        width: 100px;
+                                        height: 100px;
+                                        position: relative;
+
+                                        img {
+                                            width: 100%;
+                                            height: 100%;
+                                            display: block;
+                                            float: left;
+                                            vertical-align: top;
+                                        }
+                                    }
+
+                                    // 点击图片后激活的边框样式
+                                    .active-border {
+                                        &::after {
+                                            display: block;
+                                            content: '';
+                                            position: absolute;
+                                            left: 0;
+                                            right: 0;
+                                            top: 0;
+                                            bottom: 0;
+                                            border: 1.5px solid #00A4FF;
+                                        }
+                                    }
+
+                                }
+                            }
                         }
 
 

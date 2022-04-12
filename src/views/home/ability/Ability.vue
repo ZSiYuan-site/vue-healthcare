@@ -41,16 +41,16 @@
               <div class="ability-tabs-pane-content-pratice">行业实践</div>
               <div class="ability-tabs-pane-content-list">
                 <a href="javascript:;">
-                  <img v-lazy="'./image/ability1.png'" alt="" />
+                  <img v-lazy="'./image/home/ability1.png'" alt="" />
                 </a>
                 <a href="javascript:;">
-                  <img v-lazy="'./image/ability1.png'" alt="" />
+                  <img v-lazy="'./image/home/ability1.png'" alt="" />
                 </a>
                 <a href="javascript:;">
-                  <img v-lazy="'./image/ability1.png'" alt="" />
+                  <img v-lazy="'./image/home/ability1.png'" alt="" />
                 </a>
                 <a href="javascript:;">
-                  <img v-lazy="'./image/ability1.png'" alt="" />
+                  <img v-lazy="'./image/home/ability1.png'" alt="" />
                 </a>
               </div>
             </div>
