@@ -12,7 +12,7 @@
         <div class="advantage-content-item">
           <a href="javascript:;">
             <i>
-              <img src="./image/advantage1.png" alt="" />
+              <img v-lazy="'./image/home/advantage1.png'" alt="" />
             </i>
             <h3 class="health-conTit">领先的技术能力</h3>
             <p class="health-content">
@@ -24,7 +24,7 @@
         <div class="advantage-content-item">
           <a href="javascript:;">
             <i>
-              <img src="./image/advantage1.png" alt="" />
+              <img v-lazy="'./image/home/advantage1.png'" alt="" />
             </i>
             <h3 class="health-conTit">领先的技术能力</h3>
             <p class="health-content">
@@ -36,7 +36,7 @@
         <div class="advantage-content-item">
           <a href="javascript:;">
             <i>
-              <img src="./image/advantage1.png" alt="" />
+              <img v-lazy="'./image/home/advantage1.png'" alt="" />
             </i>
             <h3 class="health-conTit">领先的技术能力</h3>
             <p class="health-content">
@@ -48,7 +48,7 @@
         <div class="advantage-content-item">
           <a href="javascript:;">
             <i>
-              <img src="./image/advantage1.png" alt="" />
+              <img v-lazy="'./image/home/advantage1.png'" alt="" />
             </i>
             <h3 class="health-conTit">领先的技术能力</h3>
             <p class="health-content">

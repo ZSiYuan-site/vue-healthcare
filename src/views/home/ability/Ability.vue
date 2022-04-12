@@ -55,9 +55,11 @@
               </div>
             </div>
 
+            <!-- v-lazy="'./image/home/ability2.png'" -->
+
             <!-- 每个item项右侧的图片 -->
             <img
-              src="./image/ability2.png"
+              v-lazy="'./image/home/ability2.png'"
               alt=""
               class="ability-tabs-pane-content-item-img"
             />
@@ -79,23 +81,23 @@
               <div class="ability-tabs-pane-content-pratice">行业实践</div>
               <div class="ability-tabs-pane-content-list">
                 <a href="javascript:;">
-                  <img src="./image/ability1.png" alt="" />
+                  <img v-lazy="'./image/home/ability1.png'" alt="" />
                 </a>
                 <a href="javascript:;">
-                  <img src="./image/ability1.png" alt="" />
+                  <img v-lazy="'./image/home/ability1.png'" alt="" />
                 </a>
                 <a href="javascript:;">
-                  <img src="./image/ability1.png" alt="" />
+                  <img v-lazy="'./image/home/ability1.png'" alt="" />
                 </a>
                 <a href="javascript:;">
-                  <img src="./image/ability1.png" alt="" />
+                  <img v-lazy="'./image/home/ability1.png'" alt="" />
                 </a>
               </div>
             </div>
 
             <!-- 每个item项右侧的图片 -->
             <img
-              src="./image/ability3.png"
+              v-lazy="'./image/home/ability3.png'"
               alt=""
               class="ability-tabs-pane-content-item-img"
             />
@@ -117,23 +119,23 @@
               <div class="ability-tabs-pane-content-pratice">行业实践</div>
               <div class="ability-tabs-pane-content-list">
                 <a href="javascript:;">
-                  <img src="./image/ability1.png" alt="" />
+                  <img v-lazy="'./image/home/ability1.png'" alt="" />
                 </a>
                 <a href="javascript:;">
-                  <img src="./image/ability1.png" alt="" />
+                  <img v-lazy="'./image/home/ability1.png'" alt="" />
                 </a>
                 <a href="javascript:;">
-                  <img src="./image/ability1.png" alt="" />
+                  <img v-lazy="'./image/home/ability1.png'" alt="" />
                 </a>
                 <a href="javascript:;">
-                  <img src="./image/ability1.png" alt="" />
+                  <img v-lazy="'./image/home/ability1.png'" alt="" />
                 </a>
               </div>
             </div>
 
             <!-- 每个item项右侧的图片 -->
             <img
-              src="./image/ability2.png"
+              v-lazy="'./image/home/ability2.png'"
               alt=""
               class="ability-tabs-pane-content-item-img"
             />
@@ -155,23 +157,23 @@
               <div class="ability-tabs-pane-content-pratice">行业实践</div>
               <div class="ability-tabs-pane-content-list">
                 <a href="javascript:;">
-                  <img src="./image/ability1.png" alt="" />
+                  <img v-lazy="'./image/home/ability1.png'" alt="" />
                 </a>
                 <a href="javascript:;">
-                  <img src="./image/ability1.png" alt="" />
+                  <img v-lazy="'./image/home/ability1.png'" alt="" />
                 </a>
                 <a href="javascript:;">
-                  <img src="./image/ability1.png" alt="" />
+                  <img v-lazy="'./image/home/ability1.png'" alt="" />
                 </a>
                 <a href="javascript:;">
-                  <img src="./image/ability1.png" alt="" />
+                  <img v-lazy="'./image/home/ability1.png'" alt="" />
                 </a>
               </div>
             </div>
 
             <!-- 每个item项右侧的图片 -->
             <img
-              src="./image/ability2.png"
+              v-lazy="'./image/home/ability2.png'"
               alt=""
               class="ability-tabs-pane-content-item-img"
             />
@@ -193,23 +195,23 @@
               <div class="ability-tabs-pane-content-pratice">行业实践</div>
               <div class="ability-tabs-pane-content-list">
                 <a href="javascript:;">
-                  <img src="./image/ability1.png" alt="" />
+                  <img v-lazy="'./image/home/ability1.png'" alt="" />
                 </a>
                 <a href="javascript:;">
-                  <img src="./image/ability1.png" alt="" />
+                  <img v-lazy="'./image/home/ability1.png'" alt="" />
                 </a>
                 <a href="javascript:;">
-                  <img src="./image/ability1.png" alt="" />
+                  <img v-lazy="'./image/home/ability1.png'" alt="" />
                 </a>
                 <a href="javascript:;">
-                  <img src="./image/ability1.png" alt="" />
+                  <img v-lazy="'./image/home/ability1.png'" alt="" />
                 </a>
               </div>
             </div>
 
             <!-- 每个item项右侧的图片 -->
             <img
-              src="./image/ability2.png"
+              v-lazy="'./image/home/ability2.png'"
               alt=""
               class="ability-tabs-pane-content-item-img"
             />
@@ -231,23 +233,23 @@
               <div class="ability-tabs-pane-content-pratice">行业实践</div>
               <div class="ability-tabs-pane-content-list">
                 <a href="javascript:;">
-                  <img src="./image/ability1.png" alt="" />
+                  <img v-lazy="'./image/home/ability1.png'" alt="" />
                 </a>
                 <a href="javascript:;">
-                  <img src="./image/ability1.png" alt="" />
+                  <img v-lazy="'./image/home/ability1.png'" alt="" />
                 </a>
                 <a href="javascript:;">
-                  <img src="./image/ability1.png" alt="" />
+                  <img v-lazy="'./image/home/ability1.png'" alt="" />
                 </a>
                 <a href="javascript:;">
-                  <img src="./image/ability1.png" alt="" />
+                  <img v-lazy="'./image/home/ability1.png'" alt="" />
                 </a>
               </div>
             </div>
 
             <!-- 每个item项右侧的图片 -->
             <img
-              src="./image/ability2.png"
+              v-lazy="'./image/home/ability2.png'"
               alt=""
               class="ability-tabs-pane-content-item-img"
             />

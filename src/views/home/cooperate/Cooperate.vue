@@ -11,7 +11,7 @@
       <div class="cooperate-content">
         <div class="cooperate-item">
           <div class="cooperate-item-img">
-            <img src="./image/news1.png" alt="" />
+            <img v-lazy="'./image/home/news1.png'" alt="" />
           </div>
 
           <div class="cooperate-item-right-box">
@@ -22,15 +22,15 @@
             <p class="cooperate-item-right-box-partner">合作伙伴</p>
             <div class="partner-box">
               <div class="every-partner">
-                <img src="./image/partner1.png" alt="" />
+                <img v-lazy="'./image/home/partner1.png'" alt="" />
               </div>
 
               <div class="every-partner">
-                <img src="./image/partner1.png" alt="" />
+                <img v-lazy="'./image/home/partner1.png'" alt="" />
               </div>
 
               <div class="every-partner">
-                <img src="./image/partner1.png" alt="" />
+                <img v-lazy="'./image/home/partner1.png'" alt="" />
               </div>
             </div>
           </div>
@@ -45,27 +45,27 @@
             <p class="cooperate-item-right-box-partner">合作伙伴</p>
             <div class="partner-box">
               <div class="every-partner">
-                <img src="./image/partner1.png" alt="" />
+                <img v-lazy="'./image/home/partner1.png'" alt="" />
               </div>
 
               <div class="every-partner">
-                <img src="./image/partner1.png" alt="" />
+                <img v-lazy="'./image/home/partner1.png'" alt="" />
               </div>
 
               <div class="every-partner">
-                <img src="./image/partner1.png" alt="" />
+                <img v-lazy="'./image/home/partner1.png'" alt="" />
               </div>
             </div>
           </div>
 
           <div class="cooperate-item-img">
-            <img src="./image/news1.png" alt="" />
+            <img v-lazy="'./image/home/news1.png'" alt="" />
           </div>
         </div>
 
         <div class="cooperate-item">
           <div class="cooperate-item-img">
-            <img src="./image/news1.png" alt="" />
+            <img v-lazy="'./image/home/news1.png'" alt="" />
           </div>
 
           <div class="cooperate-item-right-box">
@@ -76,15 +76,15 @@
             <p class="cooperate-item-right-box-partner">合作伙伴</p>
             <div class="partner-box">
               <div class="every-partner">
-                <img src="./image/partner1.png" alt="" />
+                <img v-lazy="'./image/home/partner1.png'" alt="" />
               </div>
 
               <div class="every-partner">
-                <img src="./image/partner1.png" alt="" />
+                <img v-lazy="'./image/home/partner1.png'" alt="" />
               </div>
 
               <div class="every-partner">
-                <img src="./image/partner1.png" alt="" />
+                <img v-lazy="'./image/home/partner1.png'" alt="" />
               </div>
             </div>
           </div>

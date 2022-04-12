@@ -12,7 +12,7 @@
         <div class="news-title-pane-item">
           <a href="javascirpt:;">
             <p class="news-title-pane-item-img">
-              <img src="./image/news1.png" alt="" />
+              <img v-lazy="'./image/home/news1.png'" alt="" />
             </p>
             <div class="news-title-pane-item-box">
               <h3 class="health-conTit">
@@ -29,7 +29,7 @@
         <div class="news-title-pane-item">
           <a href="javascirpt:;">
             <p class="news-title-pane-item-img">
-              <img src="./image/news1.png" alt="" />
+              <img v-lazy="'./image/home/news1.png'" alt="" />
             </p>
             <div class="news-title-pane-item-box">
               <h3 class="health-conTit">
@@ -46,7 +46,7 @@
         <div class="news-title-pane-item">
           <a href="javascirpt:;">
             <p class="news-title-pane-item-img">
-              <img src="./image/news1.png" alt="" />
+              <img v-lazy="'./image/home/news1.png'" alt="" />
             </p>
             <div class="news-title-pane-item-box">
               <h3 class="health-conTit">
