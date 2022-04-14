@@ -330,13 +330,16 @@
                                     // 图片上传按钮
                                     .transparent-area-btn {
                                         display: block;
-                                        width: 100px;
-                                        height: 40px;
-                                        background-color: rgb(32, 0, 236);
                                         line-height: 40px;
                                         text-align: center;
                                         font-size: 14px;
+                                        width: 140px;
+                                        height: 36px;
+                                        background-color: #0092ee;
+                                        outline: none;
+                                        margin-right: 12px;
                                         color: #fff;
+                                        border: none;
                                     }
                                 }
                             }

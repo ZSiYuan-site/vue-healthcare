@@ -1,6 +1,7 @@
 .apply {
     width: 100%;
     height: 3000px;
+
     // banner区域
     .apply-banner {
         width: 100%;
@@ -29,7 +30,26 @@
                     height: 56px;
                 }
 
-                .btn-group {}
+                .btn-group {
+                    .first-btn {
+                        width: 140px;
+                        height: 36px;
+                        background-color: #0092ee;
+                        outline: none;
+                        margin-right: 12px;
+                        color: #fff;
+                        border: none;
+                    }
+
+                    .second-btn {
+                        width: 140px;
+                        height: 36px;
+                        color: #fff;
+                        background-color: transparent;
+                        outline: none;
+                        border: 0.5px solid #fff;
+                    }
+                }
             }
 
             // 右侧

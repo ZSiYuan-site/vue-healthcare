@@ -1,5 +1,5 @@
 .news {
-    height: 2000px;
+    height: 2400px;
 
     // banner
     .news-banner {
@@ -17,6 +17,7 @@
 
     // 主体内容
     .news-content {
+
         // 面包屑导航
         .container {
             border-bottom: 1px solid #ebece9;
@@ -33,21 +34,24 @@
             display: block;
             width: 100%;
             height: 800px;
-            background-color: red;
+            // background-color: red;
 
             .container {
                 display: flex;
                 border-bottom: none;
                 height: 800px;
                 width: 1180px;
+
                 // 左边
                 .news-article-left {
                     width: 760px;
                     margin-right: 86px;
 
+                    // 每一项
                     .news-article-left-item {
                         border-bottom: 1px solid #ebebeb;
                         padding: 32px 0 36px;
+
                         .item-info-img {
                             margin-right: 20px;
 
@@ -100,7 +104,91 @@
 
 
                 // 右边
-                .news-article-aside {}
+                .news-article-aside {
+                    flex: 1;
+                    margin-top: 30px;
+
+                    // 热门文章
+                    .hot-article {
+                        box-shadow: 0 5px 30px 0 rgb(0 0 0 / 5%);
+                        border: none;
+                        margin-bottom: 26px;
+                        font-size: 12px;
+                        padding: 20px 20px;
+                        color: #2d2d2d;
+                        line-height: 17px;
+
+                        // 热门文章标题
+                        .hot-article-title {
+                            padding: 16px 20px 16px 0;
+                            border-bottom: 1px solid hsla(0, 0%, 80%, .4);
+
+                            span {
+                                font-size: 18px;
+                            }
+                        }
+
+
+                        // 热门文章主体内容
+                        .hot-article-body {
+                            padding-top: 18px;
+                            .hot-article-ul {
+                                .hot-article-li {
+                                    height: 50px;
+                                    padding: 10px 0;
+                                    display: flex;
+                                    margin-bottom: 10px;
+
+                                    .icon-img {
+                                        margin-right: 7px;
+                                        display: block;
+                                        vertical-align: middle;
+                                        height: 100%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    // 行业热词
+                    .hot-word {
+                        box-shadow: 0 5px 30px 0 rgb(0 0 0 / 5%);
+                        border: none;
+                        margin-bottom: 26px;
+                        font-size: 12px;
+                        padding: 20px 20px;
+                        color: #2d2d2d;
+                        line-height: 17px;
+
+                        // 行业热词标题
+                        .hot-word-title {
+                            padding: 16px 20px 16px 0;
+                            border-bottom: 1px solid hsla(0, 0%, 80%, .4);
+
+                            span {
+                                font-size: 18px;
+                            }
+                        }
+
+                        // 行业热词主体内容
+                        .hot-word-body {
+                            padding-top: 18px;
+                            a {
+                                button {
+                                    border-radius: 13px;
+                                    padding: 5px 12px;
+                                    background: #f7f7f7;
+                                    border-radius: 13px;
+                                    border: none;
+                                    margin: 5px 12px 5px 0;
+                                    font-size: 12px;
+                                    color: #2d2d2d;
+                                }
+                            }
+
+                        }
+                    }
+                }
             }
 
         }

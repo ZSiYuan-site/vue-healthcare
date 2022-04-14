@@ -165,13 +165,25 @@ export default {
       // 控制吸顶的
       isFixed: false,
       // 控制的遮罩层是否展示
-      showSlide: false
+      showSlide: false,
+      // sheet
+      sheet: {},
+      // 当前动画正在执行的id
+      currentMoveId: null,
+      // 当前取消动画的id
+      currentRemoveId: null
     }
   },
 
   mounted () {
     window.addEventListener('scroll', this.initHeight)
-    this.moveAnimation()
+    setTimeout(() => {
+      this.moveAnimation()
+    }, 1000)
+
+    setTimeout(() => {
+      this.removeAnimation()
+    }, 6000)
   },
 
   methods: {
@@ -181,6 +193,9 @@ export default {
       style.setAttribute('type', 'text/css')
       document.head.appendChild(style)
       const sheet = style.sheet
+      //  保存到state中
+      this.sheet = sheet
+      // console.log(this.sheet);
       sheet.insertRule(`
       @keyframes move {
           to {
@@ -189,20 +204,51 @@ export default {
               clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
           }
         }`)
-      setTimeout(() => {
-        sheet.removeRule(0)
-        // 展示关键点 todo
-      }, 3000)
+    },
+
+    // 清除扫描动画
+    removeAnimation () {
+      this.sheet.removeRule(0)
+      // console.log(this.sheet);
+      // 展示关键点 todo
     },
 
     // 点击切换图片
     changeImg (index) {
       this.currentImgIndex = index
       this.currentShowImg = this.demoImgArr[index]
-      // 切换图片后就执行动画
-      setTimeout(() => {
-        this.moveAnimation()
-      }, 500)
+      // 切换图片后先清除上一个动画
+      if (this.sheet.cssRules.length === 1) { // 说明还存在动画没有清除
+        this.removeAnimation()
+        this.currentMoveId = setTimeout(() => {
+          this.sheet.insertRule(`
+          @keyframes move {
+              to {
+                  background-position: 0 100%, 0 0, 0 0, 0 0;
+                  /* 终止位置 */
+                  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+              }
+            }`)
+        }, 1000)
+        this.currentRemoveId = setTimeout(() => {
+          clearTimeout(this.currentMoveId)
+          this.removeAnimation()
+        }, 6000)
+      } else {
+        setTimeout(() => {
+          this.sheet.insertRule(`
+          @keyframes move {
+              to {
+                  background-position: 0 100%, 0 0, 0 0, 0 0;
+                  /* 终止位置 */
+                  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+              }
+            }`)
+        }, 1000)
+        setTimeout(() => {
+          this.removeAnimation()
+        }, 6000)
+      }
     },
     // 滚动吸顶
     initHeight () {

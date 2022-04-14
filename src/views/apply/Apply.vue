@@ -10,8 +10,10 @@
             <p>精准实时的人脸检测、分析、识别等服务，在线、离线满足多样需求</p>
           </div>
           <div class="btn-group">
-            <el-button type="primary">立即选购</el-button>
-            <el-button @click="gotoDoc">API文档</el-button>
+            <button class="first-btn">立即选购</button>
+            <!-- <el-button type="primary">立即选购</el-button> -->
+            <button @click="gotoDoc" class="second-btn">API文档</button>
+            <!-- <el-button @click="gotoDoc">API文档</el-button> -->
           </div>
         </div>
         <!-- 右侧 -->
