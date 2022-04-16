@@ -33,3 +33,12 @@ export const login = (username, password) => myAxios({
     password
   }
 })
+
+// 图片上传
+export const upload = (imgUrl) => myAxios({
+  url: '/upload',
+  method: 'post',
+  data: {
+    imgUrl
+  }
+})

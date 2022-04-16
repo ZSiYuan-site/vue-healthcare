@@ -8,7 +8,8 @@ import {
   Radio,
   Message,
   Breadcrumb,
-  BreadcrumbItem
+  BreadcrumbItem,
+  Upload
 } from 'element-ui'
 const element = {
   install: function (Vue) {
@@ -19,6 +20,7 @@ const element = {
     Vue.use(Radio)
     Vue.use(Breadcrumb)
     Vue.use(BreadcrumbItem)
+    Vue.use(Upload)
   }
 }
 

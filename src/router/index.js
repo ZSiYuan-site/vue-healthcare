@@ -41,6 +41,9 @@ const routes = [{
   }, {
     path: '/404',
     component: () => import('@/views/notFound/NotFound.vue')
+  }, {
+    path: '/test',
+    component: () => import('@/views/test/Test.vue')
   }
   ]
 }
