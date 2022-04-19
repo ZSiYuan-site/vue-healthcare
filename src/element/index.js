@@ -9,7 +9,12 @@ import {
   Message,
   Breadcrumb,
   BreadcrumbItem,
-  Upload
+  Upload,
+  Table,
+  Loading,
+  TableColumn,
+  Row,
+  Col
 } from 'element-ui'
 const element = {
   install: function (Vue) {
@@ -21,6 +26,11 @@ const element = {
     Vue.use(Breadcrumb)
     Vue.use(BreadcrumbItem)
     Vue.use(Upload)
+    Vue.use(Table)
+    Vue.use(Loading)
+    Vue.use(TableColumn)
+    Vue.use(Row)
+    Vue.use(Col)
   }
 }
 

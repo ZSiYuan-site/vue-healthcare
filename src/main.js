@@ -21,7 +21,7 @@ import 'mavon-editor/dist/css/index.css'
 import * as directives from '@/directives'
 
 // 引入权限拦截
-import './permission'
+// import './permission'
 
 // css样式还是需要全部引入
 import 'element-ui/lib/theme-chalk/index.css'

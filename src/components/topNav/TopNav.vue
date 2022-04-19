@@ -3,7 +3,9 @@
     <div class="top-nav">
       <div class="container">
         <!-- logo区域 -->
-        <div class="logo">这里放logo啊</div>
+        <router-link to="/">
+          <div class="logo">这里放logo啊</div>
+        </router-link>
 
         <!-- 导航列表区域 -->
         <div class="nav-lists">

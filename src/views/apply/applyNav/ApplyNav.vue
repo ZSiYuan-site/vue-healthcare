@@ -96,15 +96,15 @@
 
             <!-- 身体 -->
             <div class="function-content-body">
+              <!-- 左边 -->
               <div class="function-content-body-left">
                 <div class="left-panel">
                   <div class="show-room">
-                    <img :src="currentShowImg" alt="" class="showImg" />
-                    <!-- <img
-                      src="data:image/png;base64,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"
-                      alt=""
-                      class="showImg"
-                    /> -->
+                    <span class="showImg-wrap">
+                      <!-- <span class="point"></span> -->
+                      <img :src="currentShowImg" alt="" class="showImg" />
+                    </span>
+
                     <!-- 扫描 -->
                     <div class="wrapper"></div>
                     <!-- 透明区域 -->
@@ -114,14 +114,15 @@
                         <p>为了避免</p>
                         <p>注：Demo体验</p>
                       </span>
-                      <span class="transparent-area-btn" @click="uploadImg">
-                        本地上传
-                        <input
-                          type="file"
-                          @change="fileChange"
-                          ref="fileRef"
-                          style="display: none"
-                        />
+
+                      <span class="transparent-area-btn">
+                        <el-upload
+                          action="http://120.24.89.238:8003/eduoss/fileoss/2"
+                          :on-success="imgUploadSuccess"
+                          :show-file-list="false"
+                        >
+                          本地上传
+                        </el-upload>
                       </span>
                     </span>
                   </div>
@@ -142,9 +143,80 @@
                   </div>
                 </div>
               </div>
+
+              <!-- 右边 -->
               <div class="function-content-body-right">
-                <div class="right-panel"></div>
-                右边
+                <div class="right-panel" v-loading="loading">
+                  <template>
+                    <div class="detail-result" v-if="isShowResult">
+                      <el-row :gutter="20">
+                        <el-col :span="6"
+                          ><div
+                            class="grid-content bg-purple detail-result-text"
+                          >
+                            诊断分析
+                          </div></el-col
+                        >
+                        <el-col :span="18"
+                          ><div
+                            class="grid-content bg-purple detail-result-text"
+                          >
+                            {{ diagnosisResult.diagnosticAnalysis }}
+                          </div></el-col
+                        >
+                      </el-row>
+                      <el-row :gutter="20">
+                        <el-col :span="6"
+                          ><div
+                            class="grid-content bg-purple detail-result-text"
+                          >
+                            眼部诊断分析
+                          </div></el-col
+                        >
+                        <el-col :span="18"
+                          ><div
+                            class="grid-content bg-purple detail-result-text"
+                          >
+                            {{ diagnosisResult.eyeDiagnosticAnalysis }}
+                          </div></el-col
+                        >
+                      </el-row>
+                      <el-row :gutter="20">
+                        <el-col :span="6"
+                          ><div
+                            class="grid-content bg-purple detail-result-text"
+                          >
+                            病症介绍
+                          </div></el-col
+                        >
+                        <el-col :span="18"
+                          ><div
+                            class="grid-content bg-purple detail-result-text"
+                          >
+                            {{ diagnosisResult.symptomsIntroduction }}
+                          </div></el-col
+                        >
+                      </el-row>
+                      <el-row :gutter="20">
+                        <el-col :span="6"
+                          ><div
+                            class="grid-content bg-purple detail-result-text"
+                          >
+                            调理建议
+                          </div></el-col
+                        >
+                        <el-col :span="18"
+                          ><div
+                            class="grid-content bg-purple detail-result-text"
+                          >
+                            {{ diagnosisResult.suggestFood }}
+                          </div></el-col
+                        >
+                      </el-row>
+                    </div>
+                    <div v-else class="noData">暂无数据</div>
+                  </template>
+                </div>
               </div>
             </div>
           </div>
@@ -155,24 +227,48 @@
 </template>
 
 <script>
-// import { upload } from "@/api/index";
 export default {
   name: 'VueHealthcareApplynav',
 
   data () {
     return {
+      // 具体的诊断结果
+      diagnosisResult: {
+        // 诊断分析
+        diagnosticAnalysis: '',
+        // 眼部诊断分析
+        eyeDiagnosticAnalysis: '',
+        // 病症介绍
+        symptomsIntroduction: '',
+        // 调理建议
+        suggestFood: ''
+      },
+      // 是否展示结果
+      isShowResult: false,
+      // 人脸识别后的坐标结果
+      facePostion: [],
+      // 控制loading
+      loading: false,
       // demo图片数组
       demoImgArr: [
-        require('./image/person.jpg'),
-        require('./image/person2.jpg'),
-        require('./image/person.jpg'),
-        require('./image/person2.jpg'),
-        require('./image/person.jpg')
+        'https://tse1-mm.cn.bing.net/th/id/R-C.5a473ef2ebd1a2f0197c0f9a6c6ac8b8?rik=OS6A7cv6J1sCRQ&riu=http%3a%2f%2fwww.talkimages.cn%2fimages%2fmedium%2f20133138%2ftkm001_917355.jpg&ehk=bxa80dJuiVzQ7OB76FPKVDpIBdH0fOxfmTDJrBkLo5g%3d&risl=&pid=ImgRaw&r=0',
+        'https://tse2-mm.cn.bing.net/th/id/OIP-C.IEnuqXdpUnwwGwoLeHiv7gHaGW?pid=ImgDet&rs=1',
+        'https://tse1-mm.cn.bing.net/th/id/R-C.b9ff03e662645bb73d8bc7f65bd542ff?rik=Bvh0oKkbliWFBQ&riu=http%3a%2f%2fimg.crcz.com%2fallimg%2f201911%2f05%2f1572950540215847.jpg&ehk=3AdwQJ3GZCZsaILxxT%2f5NMFd3D5C%2bIS2gLAr4aCZ0Es%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1',
+        'https://tse3-mm.cn.bing.net/th/id/OIP-C.jQVRmmyUGXKfxBFDujNA9AHaE8?pid=ImgDet&rs=1',
+        'https://tse1-mm.cn.bing.net/th/id/R-C.d8a99cf14ce519fa1283f97474d480a5?rik=ZeP9iZjcoxgFMQ&riu=http%3a%2f%2fimg.crcz.com%2fallimg%2f201911%2f05%2f1572950540215158.jpg&ehk=GomjZHFnUVLwLMQM5xBsp4XOEIqDUuuCrk1H6BIwrNw%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1'
       ],
+      // demoImgArr: [
+      //   require("./image/person.jpg"),
+      //   require("./image/person2.jpg"),
+      //   require("./image/person.jpg"),
+      //   require("./image/person2.jpg"),
+      //   require("./image/person.jpg"),
+      // ],
       // 记录当前所选中的图片
       currentImgIndex: 0,
       // 当前所展示的图片
-      currentShowImg: '',
+      currentShowImg:
+        'https://tse1-mm.cn.bing.net/th/id/R-C.5a473ef2ebd1a2f0197c0f9a6c6ac8b8?rik=OS6A7cv6J1sCRQ&riu=http%3a%2f%2fwww.talkimages.cn%2fimages%2fmedium%2f20133138%2ftkm001_917355.jpg&ehk=bxa80dJuiVzQ7OB76FPKVDpIBdH0fOxfmTDJrBkLo5g%3d&risl=&pid=ImgRaw&r=0',
       // 控制吸顶的
       isFixed: false,
       // 控制的遮罩层是否展示
@@ -186,35 +282,84 @@ export default {
     }
   },
 
-  mounted () {
-    window.addEventListener('scroll', this.initHeight)
-    setTimeout(() => {
-      this.moveAnimation()
-    }, 1000)
+  async mounted () {
+    // loading效果
+    // setTimeout(() => {
+    //   this.loading = false;
+    // }, 5000);
 
-    setTimeout(() => {
-      this.removeAnimation()
-    }, 6000)
+    window.addEventListener('scroll', this.initHeight)
+    // setTimeout(() => {
+    //   this.moveAnimation();
+    // }, 1000);
+
+    // setTimeout(() => {
+    //   this.removeAnimation();
+    // }, 6000);
   },
 
   methods: {
-    // 图片文件发生改变的时候触发
-    fileChange (event) {
-      for (const item of event.target.files) {
-        const reader = new FileReader()
-        reader.readAsDataURL(item)
-        reader.addEventListener('load', async function () {
-          console.log(this.result)
-          this.currentShowImg = this.result
-          // let result = await upload(this.result);
-          // console.log(result);
+    // 根据图片地址获取对应的信息
+    getInfo (imgUrl) {
+      this.$http
+        .post(`http://120.24.89.238:8003/eduoss/fileoss/1?url=${imgUrl}`)
+        .then((res) => {
+          console.log(res.data)
+          setTimeout(() => {
+            // 清除上一次的结果数据
+            this.diagnosisResult = {}
+            // 关闭loading加载效果
+            this.loading = false
+            // 数据赋值
+            const { complexion, eye, program, suggest } = res.data.data.faceFinal
+            this.diagnosisResult.diagnosticAnalysis =
+              complexion.diagnosticAnalysis
+            this.diagnosisResult.eyeDiagnosticAnalysis =
+              eye.eyeDiagnosticAnalysis
+            this.diagnosisResult.symptomsIntroduction =
+              program.symptomsIntroduction
+            this.diagnosisResult.suggestFood = suggest.food
+            // 关闭loading效果
+            this.loading = false
+            // 展示数据
+            this.isShowResult = true
+          }, 2000)
         })
-      }
+        .catch((err) => {
+          console.log(err)
+        })
     },
-    // 点击上传图片图片
-    uploadImg () {
-      this.$refs.fileRef.dispatchEvent(new MouseEvent('click'))
+    // 图片上传成功的回调
+    imgUploadSuccess (res) {
+      console.log(res.src)
+      // 清除上一次遗留的红点
+      this.removePoints()
+
+      // 将原数据清空
+      this.facePostion = []
+      // 不展示数据
+      this.isShowResult = false
+
+      // 将图片显示出来
+      this.currentShowImg = res.src
+      const faceInfo = JSON.parse(res.result)
+      // 赋值位置
+      this.facePostion = faceInfo.result.face_list[0].landmark72
+      // console.log(this.facePostion)
+      // 开始扫描动画
+      this.moveAnimation()
+      // 开启loading加载效果
+      this.loading = true
+      setTimeout(() => {
+        // 移除动画
+        this.removeAnimation()
+        // 产生扫描红点
+        this.createPoints()
+      }, 3000)
+      // 发起请求，根据图片地址获取对应的信息
+      this.getInfo(res.src)
     },
+
     // 扫描的动画封装
     moveAnimation () {
       const style = document.createElement('style')
@@ -223,7 +368,6 @@ export default {
       const sheet = style.sheet
       //  保存到state中
       this.sheet = sheet
-      // console.log(this.sheet);
       sheet.insertRule(`
       @keyframes move {
           to {
@@ -236,48 +380,69 @@ export default {
 
     // 清除扫描动画
     removeAnimation () {
-      this.sheet.removeRule(0)
-      // console.log(this.sheet);
-      // 展示关键点 todo
+      if (this.sheet.cssRules.length === 1) {
+        this.sheet.removeRule(0)
+      }
+    },
+
+    // 展示人脸关键点的函数封装
+    createPoints () {
+      const wrapDom = document.querySelectorAll('.showImg-wrap')[0]
+      this.facePostion.forEach((item) => {
+        const newTag = document.createElement('span')
+        newTag.setAttribute('class', 'point')
+        newTag.setAttribute(
+          'style',
+          `top:${item.y}px;left:${item.x}px;position:absolute; display: inline-block;border-radius: 50%;  width: 2px;  height: 2px;background-color: #62eab9;`
+        )
+        wrapDom.appendChild(newTag)
+      })
+    },
+
+    // 遍历移除扫描点
+    removePoints () {
+      const wrapDom = document.querySelectorAll('.showImg-wrap')[0]
+      while (wrapDom.children.length > 1) {
+        wrapDom.removeChild(wrapDom.lastElementChild)
+      }
     },
 
     // 点击切换图片
     changeImg (index) {
-      this.currentImgIndex = index
-      this.currentShowImg = this.demoImgArr[index]
-      // 切换图片后先清除上一个动画
+      this.loading = false
+      // 遍历移除扫描点
+      this.removePoints()
+      // 如果上一个有动画，先清除上一个动画
       if (this.sheet.cssRules.length === 1) {
         // 说明还存在动画没有清除
         this.removeAnimation()
-        this.currentMoveId = setTimeout(() => {
-          this.sheet.insertRule(`
-          @keyframes move {
-              to {
-                  background-position: 0 100%, 0 0, 0 0, 0 0;
-                  /* 终止位置 */
-                  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-              }
-            }`)
-        }, 1000)
-        this.currentRemoveId = setTimeout(() => {
-          clearTimeout(this.currentMoveId)
-          this.removeAnimation()
-        }, 6000)
-      } else {
-        setTimeout(() => {
-          this.sheet.insertRule(`
-          @keyframes move {
-              to {
-                  background-position: 0 100%, 0 0, 0 0, 0 0;
-                  /* 终止位置 */
-                  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-              }
-            }`)
-        }, 1000)
-        setTimeout(() => {
-          this.removeAnimation()
-        }, 6000)
       }
+      if (this.currentMoveId !== null) {
+        // 清除定时器
+        this.currentRemoveId = null
+      }
+
+      this.currentImgIndex = index
+      // 展示图片
+      this.currentShowImg = this.demoImgArr[index]
+      // 开启扫描动画
+      this.currentMoveId = setTimeout(() => {
+        this.sheet.insertRule(`
+          @keyframes move {
+              to {
+                  background-position: 0 100%, 0 0, 0 0, 0 0;
+                  /* 终止位置 */
+                  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+              }
+            }`)
+      }, 1000)
+      setTimeout(() => {
+        // 清除定时器
+        this.currentRemoveId = null
+        // 移除扫描动画
+        this.removeAnimation()
+      }, 6000)
+      // 展示扫描点 todo
     },
     // 滚动吸顶
     initHeight () {
@@ -288,7 +453,6 @@ export default {
         document.pageYOffset ||
         document.documentElement.scrollTop ||
         document.body.scrollTop
-      // console.log(scrollTop)
       this.isFixed = scrollTop >= 360
     }
   }
